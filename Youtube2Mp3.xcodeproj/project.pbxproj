@@ -15,6 +15,8 @@
 		56702CE724B0EF9B003F7971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56702CE524B0EF9B003F7971 /* LaunchScreen.storyboard */; };
 		56702CF224B0EF9B003F7971 /* Youtube2Mp3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702CF124B0EF9B003F7971 /* Youtube2Mp3Tests.swift */; };
 		56702CFD24B0EF9C003F7971 /* Youtube2Mp3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702CFC24B0EF9C003F7971 /* Youtube2Mp3UITests.swift */; };
+		56702D0B24B12A05003F7971 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702D0A24B12A05003F7971 /* WebView.swift */; };
+		56738B1924B1BCB30091EAB4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56738B1824B1BCB30091EAB4 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		56702CF824B0EF9B003F7971 /* Youtube2Mp3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Youtube2Mp3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56702CFC24B0EF9C003F7971 /* Youtube2Mp3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube2Mp3UITests.swift; sourceTree = "<group>"; };
 		56702CFE24B0EF9C003F7971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56702D0A24B12A05003F7971 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		56738B1824B1BCB30091EAB4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				56702CE524B0EF9B003F7971 /* LaunchScreen.storyboard */,
 				56702CE824B0EF9B003F7971 /* Info.plist */,
 				56702CE224B0EF9B003F7971 /* Preview Content */,
+				56702D0A24B12A05003F7971 /* WebView.swift */,
+				56738B1824B1BCB30091EAB4 /* Coordinator.swift */,
 			);
 			path = Youtube2Mp3;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56702CDB24B0EF9A003F7971 /* AppDelegate.swift in Sources */,
+				56702D0B24B12A05003F7971 /* WebView.swift in Sources */,
+				56738B1924B1BCB30091EAB4 /* Coordinator.swift in Sources */,
 				56702CDD24B0EF9A003F7971 /* SceneDelegate.swift in Sources */,
 				56702CDF24B0EF9A003F7971 /* ContentView.swift in Sources */,
 			);
