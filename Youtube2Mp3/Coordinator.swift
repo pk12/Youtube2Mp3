@@ -33,6 +33,7 @@ class Coordinator : NSObject, WKNavigationDelegate {
                             .deletingPathExtension()
                             .appendingPathExtension("mp3")
                         
+                        try FileManager.default.copyItem(at: fileURL, to: newURL)
                         let activityViewController = UIActivityViewController(activityItems: [newURL], applicationActivities: nil)
                         
                         self.toggleSpinner(hide: true)
@@ -40,9 +41,10 @@ class Coordinator : NSObject, WKNavigationDelegate {
                         DispatchQueue.main.async {
                             UIApplication.shared.windows.first?.rootViewController?                          .present(activityViewController, animated: true, completion: nil)
                         }
-                        
-                        
 
+                    }
+                    catch {
+                        print(error)
                     }
                 }
                 
