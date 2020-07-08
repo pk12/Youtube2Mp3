@@ -39,7 +39,10 @@ class Coordinator : NSObject, WKNavigationDelegate {
                         self.toggleSpinner(hide: true)
                         
                         DispatchQueue.main.async {
-                            UIApplication.shared.windows.first?.rootViewController?                          .present(activityViewController, animated: true, completion: nil)
+                            //Kinda hacky
+                            let application = UIApplication.value(forKeyPath: #keyPath(UIApplication.shared)) as! UIApplication
+                            
+                            application.windows.first?.rootViewController?                          .present(activityViewController, animated: true, completion: nil)
                         }
 
                     }
@@ -63,9 +66,11 @@ class Coordinator : NSObject, WKNavigationDelegate {
     
     func toggleSpinner(hide: Bool) {
         DispatchQueue.main.async {
-            
+            //Kinda hacky
+            let application = UIApplication.value(forKeyPath: #keyPath(UIApplication.shared)) as! UIApplication
+
             if (hide) {
-                UIApplication.shared.windows.first?.rootViewController?
+                application.windows.first?.rootViewController?
                 .dismiss(animated: false, completion: nil)
             }
             else {
@@ -76,7 +81,7 @@ class Coordinator : NSObject, WKNavigationDelegate {
 
                 self.alert.view.addSubview(loadingIndicator)
                 
-                UIApplication.shared.windows.first?.rootViewController?
+                application.windows.first?.rootViewController?
                     .present(self.alert, animated: true, completion: nil)
             }
         }

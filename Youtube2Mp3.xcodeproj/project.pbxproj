@@ -17,6 +17,12 @@
 		56702CFD24B0EF9C003F7971 /* Youtube2Mp3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702CFC24B0EF9C003F7971 /* Youtube2Mp3UITests.swift */; };
 		56702D0B24B12A05003F7971 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702D0A24B12A05003F7971 /* WebView.swift */; };
 		56738B1924B1BCB30091EAB4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56738B1824B1BCB30091EAB4 /* Coordinator.swift */; };
+		56F8F33224B6338000EEFF10 /* CustomShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F8F33124B6338000EEFF10 /* CustomShareViewController.swift */; };
+		56F8F33924B6338000EEFF10 /* URLSharing.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56F8F32F24B6338000EEFF10 /* URLSharing.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		56F8F34024B645B800EEFF10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702CDE24B0EF9A003F7971 /* ContentView.swift */; };
+		56F8F34124B645B800EEFF10 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56702D0A24B12A05003F7971 /* WebView.swift */; };
+		56F8F34324B648CC00EEFF10 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56738B1824B1BCB30091EAB4 /* Coordinator.swift */; };
+		56F8F34524B6527B00EEFF10 /* CustomShareNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F8F34424B6527B00EEFF10 /* CustomShareNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,28 @@
 			remoteGlobalIDString = 56702CD624B0EF9A003F7971;
 			remoteInfo = Youtube2Mp3;
 		};
+		56F8F33724B6338000EEFF10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56702CCF24B0EF9A003F7971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56F8F32E24B6338000EEFF10;
+			remoteInfo = URLSharing;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56F8F33A24B6338000EEFF10 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				56F8F33924B6338000EEFF10 /* URLSharing.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		56702CD724B0EF9A003F7971 /* Youtube2Mp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube2Mp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +80,12 @@
 		56702CFE24B0EF9C003F7971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56702D0A24B12A05003F7971 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		56738B1824B1BCB30091EAB4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		56F8F32F24B6338000EEFF10 /* URLSharing.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = URLSharing.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F8F33124B6338000EEFF10 /* CustomShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShareViewController.swift; sourceTree = "<group>"; };
+		56F8F33624B6338000EEFF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F8F33E24B633D000EEFF10 /* Youtube2Mp3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Youtube2Mp3.entitlements; sourceTree = "<group>"; };
+		56F8F33F24B633E200EEFF10 /* URLSharing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = URLSharing.entitlements; sourceTree = "<group>"; };
+		56F8F34424B6527B00EEFF10 /* CustomShareNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShareNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56F8F32C24B6338000EEFF10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +126,7 @@
 				56702CD924B0EF9A003F7971 /* Youtube2Mp3 */,
 				56702CF024B0EF9B003F7971 /* Youtube2Mp3Tests */,
 				56702CFB24B0EF9B003F7971 /* Youtube2Mp3UITests */,
+				56F8F33024B6338000EEFF10 /* URLSharing */,
 				56702CD824B0EF9A003F7971 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +137,7 @@
 				56702CD724B0EF9A003F7971 /* Youtube2Mp3.app */,
 				56702CED24B0EF9B003F7971 /* Youtube2Mp3Tests.xctest */,
 				56702CF824B0EF9B003F7971 /* Youtube2Mp3UITests.xctest */,
+				56F8F32F24B6338000EEFF10 /* URLSharing.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +145,7 @@
 		56702CD924B0EF9A003F7971 /* Youtube2Mp3 */ = {
 			isa = PBXGroup;
 			children = (
+				56F8F33E24B633D000EEFF10 /* Youtube2Mp3.entitlements */,
 				56702CDA24B0EF9A003F7971 /* AppDelegate.swift */,
 				56702CDC24B0EF9A003F7971 /* SceneDelegate.swift */,
 				56702CDE24B0EF9A003F7971 /* ContentView.swift */,
@@ -142,6 +185,17 @@
 			path = Youtube2Mp3UITests;
 			sourceTree = "<group>";
 		};
+		56F8F33024B6338000EEFF10 /* URLSharing */ = {
+			isa = PBXGroup;
+			children = (
+				56F8F33F24B633E200EEFF10 /* URLSharing.entitlements */,
+				56F8F33124B6338000EEFF10 /* CustomShareViewController.swift */,
+				56F8F33624B6338000EEFF10 /* Info.plist */,
+				56F8F34424B6527B00EEFF10 /* CustomShareNavigationController.swift */,
+			);
+			path = URLSharing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,10 +206,12 @@
 				56702CD324B0EF9A003F7971 /* Sources */,
 				56702CD424B0EF9A003F7971 /* Frameworks */,
 				56702CD524B0EF9A003F7971 /* Resources */,
+				56F8F33A24B6338000EEFF10 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				56F8F33824B6338000EEFF10 /* PBXTargetDependency */,
 			);
 			name = Youtube2Mp3;
 			productName = Youtube2Mp3;
@@ -198,6 +254,23 @@
 			productReference = 56702CF824B0EF9B003F7971 /* Youtube2Mp3UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		56F8F32E24B6338000EEFF10 /* URLSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56F8F33D24B6338000EEFF10 /* Build configuration list for PBXNativeTarget "URLSharing" */;
+			buildPhases = (
+				56F8F32B24B6338000EEFF10 /* Sources */,
+				56F8F32C24B6338000EEFF10 /* Frameworks */,
+				56F8F32D24B6338000EEFF10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URLSharing;
+			productName = URLSharing;
+			productReference = 56F8F32F24B6338000EEFF10 /* URLSharing.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +292,9 @@
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 56702CD624B0EF9A003F7971;
 					};
+					56F8F32E24B6338000EEFF10 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 				};
 			};
 			buildConfigurationList = 56702CD224B0EF9A003F7971 /* Build configuration list for PBXProject "Youtube2Mp3" */;
@@ -237,6 +313,7 @@
 				56702CD624B0EF9A003F7971 /* Youtube2Mp3 */,
 				56702CEC24B0EF9B003F7971 /* Youtube2Mp3Tests */,
 				56702CF724B0EF9B003F7971 /* Youtube2Mp3UITests */,
+				56F8F32E24B6338000EEFF10 /* URLSharing */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +337,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56702CF624B0EF9B003F7971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F8F32D24B6338000EEFF10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,6 +381,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56F8F32B24B6338000EEFF10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F8F34324B648CC00EEFF10 /* Coordinator.swift in Sources */,
+				56F8F34024B645B800EEFF10 /* ContentView.swift in Sources */,
+				56F8F34124B645B800EEFF10 /* WebView.swift in Sources */,
+				56F8F33224B6338000EEFF10 /* CustomShareViewController.swift in Sources */,
+				56F8F34524B6527B00EEFF10 /* CustomShareNavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -309,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = 56702CD624B0EF9A003F7971 /* Youtube2Mp3 */;
 			targetProxy = 56702CF924B0EF9B003F7971 /* PBXContainerItemProxy */;
+		};
+		56F8F33824B6338000EEFF10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56F8F32E24B6338000EEFF10 /* URLSharing */;
+			targetProxy = 56F8F33724B6338000EEFF10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,9 +542,12 @@
 		56702D0224B0EF9C003F7971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Youtube2Mp3/Youtube2Mp3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Youtube2Mp3/Preview Content\"";
+				DEVELOPMENT_TEAM = SH2X9X9LQL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Youtube2Mp3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,9 +564,12 @@
 		56702D0324B0EF9C003F7971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Youtube2Mp3/Youtube2Mp3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Youtube2Mp3/Preview Content\"";
+				DEVELOPMENT_TEAM = SH2X9X9LQL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Youtube2Mp3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,6 +663,46 @@
 			};
 			name = Release;
 		};
+		56F8F33B24B6338000EEFF10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = URLSharing/URLSharing.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH2X9X9LQL;
+				INFOPLIST_FILE = URLSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OrgId.Youtube2Mp3.URLSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56F8F33C24B6338000EEFF10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = URLSharing/URLSharing.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH2X9X9LQL;
+				INFOPLIST_FILE = URLSharing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OrgId.Youtube2Mp3.URLSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -591,6 +738,15 @@
 			buildConfigurations = (
 				56702D0824B0EF9C003F7971 /* Debug */,
 				56702D0924B0EF9C003F7971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56F8F33D24B6338000EEFF10 /* Build configuration list for PBXNativeTarget "URLSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F8F33B24B6338000EEFF10 /* Debug */,
+				56F8F33C24B6338000EEFF10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
